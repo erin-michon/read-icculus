@@ -1,9 +1,16 @@
 # Note Taker Starter Code
 
+## Description:
+This is an application built to allow user to write/save notes with the potential to delete them as well.  I primarily utilized my developing skill sets in express.js and node.js create this application.  The application was also deployed to Heroku.  Some of the methods and skills I used will be noted below once I complete this Challenges.
+
+## Challenge User Story and Acceptance Criteria
+
+**USER STORY**
 AS A small business owner
 I WANT to be able to write and save notes
 SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
+**ACCECPTANCE CRITERIA**
 GIVEN a note-taking application
 WHEN I open the Note Taker
 THEN I am presented with a landing page with a link to a notes page
