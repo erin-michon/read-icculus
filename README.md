@@ -5,11 +5,6 @@ This is an application built to allow user to write/save notes with the potentia
 
 ## Challenge User Story and Acceptance Criteria
 
-**USER STORY**
-AS A small business owner
-I WANT to be able to write and save notes
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
-
 **ACCECPTANCE CRITERIA**
 GIVEN a note-taking application
 WHEN I open the Note Taker
