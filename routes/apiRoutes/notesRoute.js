@@ -1,19 +1,31 @@
 const router = require('express').Router();
+const path = require('path')
+const notes = require('../../db/db.json');
+const fs = require('fs');
 
-const { notes } = require('../../db/db.json');
+//npm for unique id; const id = generateUniqueId(); 
+const generateUniqueId = require('generate-unique-id');
+const id = generateUniqueId()
 
-router.get('/notes', (req, res) =>{
-    res.json(notes);
+//Read Notes (GET)
+router.get('/notes', (req,res) => {    
+
+    res.sendFile(path.join(__dirname, '../../db/db.json'))
 });
 
+//Create Note (POST)
 router.post('/notes', (req, res) => {
-    // set random id
-    // req.body.id = function to create id
 
+    const newNote = req.body;
     
-    // req.body is where our incoming content will be
-  console.log(req.body);
-  res.json(req.body);
+    newNote.id = generateUniqueId();
+
+    notes.push(newNote);
+
+    fs.writeFileSync(path.join(__dirname, '../../db/db.json'),JSON.stringify(notesArr, null, 2))
+
 });
+
+//Delete Note (DELETE)
 
 module.exports = router;

@@ -5,6 +5,7 @@ let newNoteBtn;
 let noteList;
 
 if (window.location.pathname === '/notes') {
+  console.log("on the notes path");
   noteTitle = document.querySelector('.note-title');
   noteText = document.querySelector('.note-textarea');
   saveNoteBtn = document.querySelector('.save-note');
@@ -51,6 +52,7 @@ const deleteNote = (id) =>
   });
 
 const renderActiveNote = () => {
+  console.log("renderActiveNote fxn called");
   hide(saveNoteBtn);
 
   if (activeNote.id) {
@@ -109,6 +111,7 @@ const handleNewNoteView = (e) => {
 };
 
 const handleRenderSaveBtn = () => {
+  console.log("handleRenderSaveBtn fxn called");
   if (!noteTitle.value.trim() || !noteText.value.trim()) {
     hide(saveNoteBtn);
   } else {
