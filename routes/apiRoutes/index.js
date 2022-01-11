@@ -1,7 +1,9 @@
+//require use of router and routes defined in this folder (notesRoute)
 const router = require('express').Router();
-const notesRoute = require('../apiRoutes/notesRoute');
+const notesRoutes = require('../apiRoutes/notesRoutes');
 
-router.use(notesRoute);
+//Router instance
+router.use(notesRoutes);
 
-
+//Module exports
 module.exports = router;
