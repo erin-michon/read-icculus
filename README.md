@@ -1,21 +1,33 @@
-# Note Taker Starter Code
+# Note Taker
 
 ## Description:
-This is an application built to allow user to write/save notes with the potential to delete them as well.  I primarily utilized my developing skill sets in express.js and node.js create this application.  The application was also deployed to Heroku.  Some of the methods and skills I used will be noted below once I complete this Challenges.
+This is an application built to allow user to write/save notes with the potential to delete them as well.  I primarily utilized my developing skill sets in express.js and node.js create this application.  The application was also deployed to Heroku.  Some of the methods and skills I used are shown below:
 
-## Challenge User Story and Acceptance Criteria
+* Express.js was utilized to start the server
 
-**ACCECPTANCE CRITERIA**
-GIVEN a note-taking application
-WHEN I open the Note Taker
-THEN I am presented with a landing page with a link to a notes page
-WHEN I click on the link to the notes page
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-WHEN I enter a new note title and the note’s text
-THEN a Save icon appears in the navigation at the top of the page
-WHEN I click on the Save icon
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
-WHEN I click on an existing note in the list in the left-hand column
-THEN that note appears in the right-hand column
-WHEN I click on the Write icon in the navigation at the top of the page
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
+![image info](./public/assets/images/server.JPG)
+
+* Generate-Unique-ID npm package installed to help create a unique id for each note and Get and Post routes created for (/api/notes):
+
+![image info](./public/assets/images/unique.JPG)
+
+## Installation:
+Installation requiements include:
+
+* npm install express generate-unique-id --save
+
+## Application Deployment:
+
+Please visit the deployed application: [The Note-Taker](https://murmuring-sands-28795.herokuapp.com/)
+
+## License:
+[MIT License](https://choosealicense.com/licenses/mit/)
+
+## Contributing:
+Please refer to [Contributor Covenant](https://www.contributor-covenant.org/) for guidelines.
+
+## Questions:
+Please do not hesitate to reach out to me directly with additional questions via my email address or Github Profile below:
+  
+* Email: [erin.michon@gmail.com](mailto:erin.michon@gmail.com) 
+* Github Profile: [erin-michon](https://github.com/erin-michon) 

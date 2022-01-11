@@ -13,7 +13,7 @@ const id = generateUniqueId()
 //Read Notes (GET)
 router.get('/notes', (req, res) => {    
 
-    res.sendFile(path.join(__dirname, '../../db/db.json'));
+    res.json(notes);
 
 });
 
@@ -33,7 +33,5 @@ router.post('/notes', (req, res) => {
     res.json(newNote);
 
 });
-
-//Delete Note (DELETE)
 
 module.exports = router;
