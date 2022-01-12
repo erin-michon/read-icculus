@@ -24,11 +24,9 @@ router.post('/notes', (req, res) => {
     
     req.body.id = generateUniqueId();
 
-    console.log(newNote);
-
     notes.push(newNote);
 
-    fs.writeFileSync(path.join(__dirname, '../../db/db.json'),JSON.stringify(notes, null, 2));
+    fs.writeFileSync(path.join(__dirname, '../../db/db.json'),JSON.stringify({notes}, null, 2));
 
     res.json(newNote);
 
